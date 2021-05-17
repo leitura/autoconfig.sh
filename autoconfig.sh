@@ -357,8 +357,8 @@ echo
 read -p "Usuário :" name
 read -p "Senha :" pass
 useradd -M -s /bin/false $name
-(echo $pass; echo $pass)|passwd $name 2>/dev/null' > /bin/CREARUSER && chmod + x /bin/CREARUSER
+(echo $pass; echo $pass)|passwd $name 2>/dev/null' > /bin/CREARUSER && chmod +x /bin/CREARUSER
 echo '
 echo
 read -p "Digite o nome de usuário que deseja remover :" user
-userdel -f $us' >/bin/REMOUSER && chmod + x /bin/REMOUSER
+userdel -f $us' >/bin/REMOUSER && chmod +x /bin/REMOUSER
